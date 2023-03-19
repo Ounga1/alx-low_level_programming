@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	cha i;
+	char i;
 
-	for (i = 'a' ; i <= ; i++)
+	for (i = 'a' ; i <= 'z' ; i++)
 		if (i != 'q' && i != 'e')
 			putchar(i);
 	putchar('\n');
