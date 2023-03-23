@@ -568,4 +568,3 @@ julien@ubuntu:~/0x04$
 -   GitHub repository: `alx-low_level_programming`
 -   Directory: `0x04-more_functions_nested_loops`
 -   File: `10-print_triangle.c`
-
