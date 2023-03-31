@@ -2,31 +2,26 @@
 
 /**
  * _strncat - concatenates two strings
- * using at most n bytes from src
- * @dest: input value
- * @src: input value
- * @n: input value
+ * @dest: destination string
+ * @src: the source string
+ * @n: number of characters to be appended
  *
- * Return: dest
+ * Return: Return concatenated strings
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
+	int destlen = 0;
+	int srclen = 0;
 	int i;
-	int j;
 
-	i = 0;
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-	j = 0;
-	while (j < n && src[j] != '\0')
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
-	dest[i] = '\0';
+	for (i = 0 ; dest[i] != '\0' ; i++)
+		destlen++;
+	for (i = 0 ; src[i] != '\0' ; i++)
+		srclen++;
+	for (i = 0 ; i < n ; i++)
+		dest[destlen] = src[i];
 	return (dest);
 }
+
+
